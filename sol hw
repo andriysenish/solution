@@ -1,0 +1,57 @@
+1.
+let str = 'Hello';
+function sol() {
+    return str.split("").reverse().join("");
+}
+console.log(sol())
+
+2.
+let a = 'Hey';
+
+const reverse = (a) => {
+  return Array.from(a).map (el => {
+    if (el == el.toUpperCase()) {
+      return el.toLowerCase()
+    }
+    if (el == el.toLowerCase()) {
+      return el.toUpperCase()
+    }
+    
+  }).join('')
+  
+}
+console.log(reverse(a))
+
+4.
+let a = 'H4e6 y5';
+function sol(){
+  return a.replaceAll(/\d/g, '')
+}
+console.log(sol()
+
+5.
+let commas = 'H4 e6 y5';
+
+function sol(){
+  return commas.replace(/ /g, ',')
+}
+console.log(sol())
+
+6.
+let cum = 'hello, he is bad guy.'
+
+function sol(){
+  return cum.match(/ (\he)/g).length;
+}
+console.log(sol())
+
+7. 
+let a = 'Hey it is me';
+function reverse() {
+  return a
+    .split` `
+    .map((w, i) => i & 1 ? [...w].reverse().join`` : w)
+    .join` `
+}
+console.log(reverse())
+
